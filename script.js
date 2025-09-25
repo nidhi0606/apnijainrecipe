@@ -24,18 +24,14 @@ searchInput.addEventListener("keyup", function() {
   });
 });
 
-// Optional: Simple Modal for recipe details
+// Show/Hide recipe details
 const detailSections = document.querySelectorAll(".recipe-detail");
 detailSections.forEach(section => section.style.display = "none");
 
 document.querySelectorAll(".recipe-card .btn").forEach(btn => {
   btn.addEventListener("click", function(e) {
     e.preventDefault();
-
-    // Hide all details
     detailSections.forEach(sec => sec.style.display = "none");
-
-    // Show target section
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
       target.style.display = "block";
