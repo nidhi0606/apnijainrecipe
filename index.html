@@ -7,56 +7,119 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header with Logo -->
   <header>
-    <h1>Apni Jain Recipe</h1>
-    <p>Top 5 Delicious Jain Recipes</p>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Apni Jain Recipe Logo" class="logo">
+      <h1>Apni Jain Recipe</h1>
+      <p>Healthy & Delicious Jain Recipes</p>
+    </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
-    <button class="tablink" onclick="openRecipe(event, 'TofuStirFry')">Tofu Stir Fry</button>
-    <button class="tablink" onclick="openRecipe(event, 'CabbageRoll')">Cabbage Rolls</button>
-    <button class="tablink" onclick="openRecipe(event, 'VegetablePulao')">Vegetable Pulao</button>
-    <button class="tablink" onclick="openRecipe(event, 'PaneerButterMasala')">Paneer Butter Masala</button>
-    <button class="tablink" onclick="openRecipe(event, 'MethiThepla')">Methi Thepla</button>
+    <button class="tablink" onclick="openRecipe(event, 'TofuWalnut')">Tofu & Walnut Rolls</button>
+    <button class="tablink" onclick="openRecipe(event, 'PumpkinCabbage')">Pumpkin Seed Cabbage Rolls</button>
+    <button class="tablink" onclick="openRecipe(event, 'HimachaliTofu')">Himachali Tofu Stuffed Shimla Mirch</button>
+    <button class="tablink" onclick="openRecipe(event, 'CabbageSweetCorn')">Cabbage Tofu Rolls with Sweet Corn & Walnut</button>
   </nav>
 
+  <!-- Recipe Container -->
   <div class="container">
-    <div id="TofuStirFry" class="tabcontent">
-      <h2>Tofu Stir Fry</h2>
-      <p><strong>Ingredients:</strong> Tofu, bell peppers, soy sauce, garlic, ginger.</p>
-      <p><strong>Instructions:</strong> Cut tofu and vegetables, sauté with garlic and ginger, add soy sauce, serve hot.</p>
+
+    <!-- Tofu & Walnut Rolls -->
+    <div id="TofuWalnut" class="tabcontent">
+      <h2>Weight-Loss Style Tofu & Walnut Rolls</h2>
+      <img src="images/tofu_walnut_rolls.jpg" alt="Tofu & Walnut Rolls" class="recipe-img">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>200g tofu, crumbled</li>
+        <li>2 tbsp walnuts, chopped</li>
+        <li>1 tsp olive oil</li>
+        <li>Salt & pepper to taste</li>
+        <li>1 tsp soy sauce (optional)</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Mix tofu and walnuts in a bowl with salt, pepper, and olive oil.</li>
+        <li>Form small rolls or patties.</li>
+        <li>Heat a non-stick pan and cook each roll for 3–4 minutes per side until golden.</li>
+        <li>Serve hot with a side salad.</li>
+      </ol>
     </div>
 
-    <div id="CabbageRoll" class="tabcontent">
-      <h2>Cabbage Rolls</h2>
-      <p><strong>Ingredients:</strong> Cabbage, rice, carrots, beans, tomato sauce.</p>
-      <p><strong>Instructions:</strong> Boil cabbage leaves, fill with rice and veggies, bake with tomato sauce.</p>
+    <!-- Pumpkin Seed Cabbage Rolls -->
+    <div id="PumpkinCabbage" class="tabcontent">
+      <h2>Pumpkin Seed Cabbage Rolls</h2>
+      <img src="images/pumpkin_seed_cabbage_rolls.jpg" alt="Pumpkin Seed Cabbage Rolls" class="recipe-img">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>6 large cabbage leaves</li>
+        <li>1 cup cooked quinoa or rice</li>
+        <li>2 tbsp pumpkin seeds</li>
+        <li>1 carrot, grated</li>
+        <li>Salt, pepper, and herbs</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Blanch cabbage leaves until soft.</li>
+        <li>Mix cooked quinoa, pumpkin seeds, carrot, and seasoning.</li>
+        <li>Fill each leaf with the mixture and roll tightly.</li>
+        <li>Steam or bake for 10 minutes before serving.</li>
+      </ol>
     </div>
 
-    <div id="VegetablePulao" class="tabcontent">
-      <h2>Vegetable Pulao</h2>
-      <p><strong>Ingredients:</strong> Basmati rice, peas, carrots, beans, cumin, ghee.</p>
-      <p><strong>Instructions:</strong> Sauté spices and vegetables, add rice and water, cook until done.</p>
+    <!-- Himachali Tofu Stuffed Shimla Mirch -->
+    <div id="HimachaliTofu" class="tabcontent">
+      <h2>Himachali–Uttarakhandi Tofu Stuffed Shimla Mirch</h2>
+      <img src="images/himachali_tofu.jpg" alt="Himachali Tofu Stuffed Shimla Mirch" class="recipe-img">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>4 bell peppers</li>
+        <li>150g tofu, crumbled</li>
+        <li>1 onion, chopped</li>
+        <li>1 tsp cumin seeds</li>
+        <li>Salt, pepper, and garam masala</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Cut tops of bell peppers and remove seeds.</li>
+        <li>Sauté onion, tofu, and spices.</li>
+        <li>Stuff bell peppers with the mixture.</li>
+        <li>Bake at 180°C for 20 minutes.</li>
+      </ol>
     </div>
 
-    <div id="PaneerButterMasala" class="tabcontent">
-      <h2>Paneer Butter Masala</h2>
-      <p><strong>Ingredients:</strong> Paneer, tomato puree, butter, cream, spices.</p>
-      <p><strong>Instructions:</strong> Cook tomato puree with spices, add paneer and cream, simmer and serve.</p>
+    <!-- Cabbage Tofu Rolls with Sweet Corn & Walnut -->
+    <div id="CabbageSweetCorn" class="tabcontent">
+      <h2>Cabbage Tofu Rolls with Sweet Corn & Walnut Twist</h2>
+      <img src="images/cabbage_tofu_sweetcorn.jpg" alt="Cabbage Tofu Rolls with Sweet Corn & Walnut" class="recipe-img">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>6 cabbage leaves</li>
+        <li>100g tofu, crumbled</li>
+        <li>½ cup sweet corn</li>
+        <li>2 tbsp walnuts, chopped</li>
+        <li>Salt, pepper, herbs</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Blanch cabbage leaves until soft.</li>
+        <li>Mix tofu, sweet corn, walnuts, and seasoning.</li>
+        <li>Fill cabbage leaves with the mixture and roll.</li>
+        <li>Steam or bake for 10 minutes before serving.</li>
+      </ol>
     </div>
 
-    <div id="MethiThepla" class="tabcontent">
-      <h2>Methi Thepla</h2>
-      <p><strong>Ingredients:</strong> Whole wheat flour, fenugreek leaves (methi), spices, oil.</p>
-      <p><strong>Instructions:</strong> Mix dough with methi and spices, roll, cook on skillet until golden.</p>
-    </div>
   </div>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Apni Jain Recipe
+    <p>&copy; 2025 Apni Jain Recipe | Healthy Jain Cooking</p>
+    <p>Follow us on <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">Facebook</a></p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
