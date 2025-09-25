@@ -1,20 +1,45 @@
-function openRecipe(evt, recipeName) {
-  let tabcontent = document.getElementsByClassName("tabcontent");
-  for (let i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].classList.remove("show");
-  }
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
 
-  let tablinks = document.getElementsByClassName("tablink");
-  for (let i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+// Recipe Search
+const searchInput = document.createElement("input");
+searchInput.setAttribute("type", "text");
+searchInput.setAttribute("placeholder", "🔎 रेसिपी खोजें...");
+searchInput.classList.add("search-bar");
 
-  let selected = document.getElementById(recipeName);
-  selected.classList.add("show");
-  evt.currentTarget.className += " active";
-}
+// Add search bar into header
+document.querySelector(".site-header .container").appendChild(searchInput);
 
-// Default: first tab visible
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelector(".tablink").click();
+searchInput.addEventListener("keyup", function() {
+  const query = this.value.toLowerCase();
+  document.querySelectorAll(".recipe-card").forEach(card => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    card.style.display = title.includes(query) ? "block" : "none";
+  });
+});
+
+// Optional: Simple Modal for recipe details
+const detailSections = document.querySelectorAll(".recipe-detail");
+detailSections.forEach(section => section.style.display = "none");
+
+document.querySelectorAll(".recipe-card .btn").forEach(btn => {
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Hide all details
+    detailSections.forEach(sec => sec.style.display = "none");
+
+    // Show target section
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.style.display = "block";
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 });
