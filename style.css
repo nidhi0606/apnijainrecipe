@@ -1,115 +1,85 @@
-/* Body & Fonts */
+/* Jain Color Theme */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #fffaf2;
+  color: #4b2e2e;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
 header {
-    background: linear-gradient(90deg, #ffebcc, #fff2e0);
-    text-align: center;
-    padding: 20px 10px;
-    border-bottom: 2px solid #e6c07d;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background: linear-gradient(90deg, #f5a623, #e6c07d);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-header h1 { margin:0; font-size:2.2rem; color:#d97d2c; }
-header p { margin:5px 0 0 0; font-size:1rem; color:#555; }
-
-/* Navigation Tabs */
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #fff2e0;
-    border-bottom: 2px solid #e6c07d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffe5b4;
+  padding: 10px;
 }
 
 nav button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
-    margin: 5px;
-    border-radius: 12px;
-    color: #d97d2c;
-    box-shadow: 0 0 0 rgba(0,0,0,0);
+  background-color: #f5a623;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 nav button:hover {
-    background: linear-gradient(135deg, #d97d2c, #f5a623);
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(217, 125, 44, 0.4);
+  background-color: #e68a00;
+  box-shadow: 0 0 10px #ffcc80;
+  transform: scale(1.05);
 }
 
 nav button.active {
-    background: linear-gradient(135deg, #f5a623, #d97d2c);
-    color: #fff;
-    box-shadow: 0 4px 20px rgba(217,125,44,0.5);
-    transform: scale(1.05);
+  background-color: #d97d2c;
+  box-shadow: 0 0 15px #ffa64d;
 }
 
-/* Recipe Container */
+/* Container */
 .container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+  padding: 20px;
 }
 
-/* Tab content */
+/* Tabcontent with fade-in */
 .tabcontent {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    background-color: #fffdf5;
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .tabcontent.show {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
+  animation: glowFade 0.6s ease-in-out;
 }
 
-/* Headings */
-h2 { color:#b35e00; margin-top:0; }
-h3 { color:#d97d2c; }
-
-/* Lists */
-ul, ol { margin-left: 20px; }
-li { margin-bottom: 8px; }
-li::before {
-    content: "•";
-    color: #f5a623;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    transform: scale(1.2);
+@keyframes glowFade {
+  from { opacity: 0; text-shadow: 0 0 10px #ffcc80; }
+  to { opacity: 1; text-shadow: none; }
 }
 
 /* Footer */
 footer {
-    background-color: #ffebcc;
-    text-align: center;
-    padding: 15px 10px;
-    border-top: 2px solid #e6c07d;
-    margin-top: 20px;
+  background-color: #ffebcc;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #e6c07d;
+  margin-top: 20px;
 }
-footer a { color:#d97d2c; text-decoration:none; font-weight:bold; }
-footer a:hover { text-decoration:underline; }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    nav { flex-direction: column; }
-    nav button { width: 90%; margin:5px auto; }
-    .container { padding: 10px; }
+  nav { flex-direction: column; }
+  nav button { width: 90%; margin: 5px auto; }
 }
