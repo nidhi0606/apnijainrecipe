@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apni Jain Recipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Apni Jain Recipe</h1>
+    <p>Top 5 Delicious Jain Recipes</p>
+  </header>
+
+  <nav>
+    <button class="tablink" onclick="openRecipe(event, 'TofuStirFry')">Tofu Stir Fry</button>
+    <button class="tablink" onclick="openRecipe(event, 'CabbageRoll')">Cabbage Rolls</button>
+    <button class="tablink" onclick="openRecipe(event, 'VegetablePulao')">Vegetable Pulao</button>
+    <button class="tablink" onclick="openRecipe(event, 'PaneerButterMasala')">Paneer Butter Masala</button>
+    <button class="tablink" onclick="openRecipe(event, 'MethiThepla')">Methi Thepla</button>
+  </nav>
+
+  <div class="container">
+    <div id="TofuStirFry" class="tabcontent">
+      <h2>Tofu Stir Fry</h2>
+      <p><strong>Ingredients:</strong> Tofu, bell peppers, soy sauce, garlic, ginger.</p>
+      <p><strong>Instructions:</strong> Cut tofu and vegetables, sauté with garlic and ginger, add soy sauce, serve hot.</p>
+    </div>
+
+    <div id="CabbageRoll" class="tabcontent">
+      <h2>Cabbage Rolls</h2>
+      <p><strong>Ingredients:</strong> Cabbage, rice, carrots, beans, tomato sauce.</p>
+      <p><strong>Instructions:</strong> Boil cabbage leaves, fill with rice and veggies, bake with tomato sauce.</p>
+    </div>
+
+    <div id="VegetablePulao" class="tabcontent">
+      <h2>Vegetable Pulao</h2>
+      <p><strong>Ingredients:</strong> Basmati rice, peas, carrots, beans, cumin, ghee.</p>
+      <p><strong>Instructions:</strong> Sauté spices and vegetables, add rice and water, cook until done.</p>
+    </div>
+
+    <div id="PaneerButterMasala" class="tabcontent">
+      <h2>Paneer Butter Masala</h2>
+      <p><strong>Ingredients:</strong> Paneer, tomato puree, butter, cream, spices.</p>
+      <p><strong>Instructions:</strong> Cook tomato puree with spices, add paneer and cream, simmer and serve.</p>
+    </div>
+
+    <div id="MethiThepla" class="tabcontent">
+      <h2>Methi Thepla</h2>
+      <p><strong>Ingredients:</strong> Whole wheat flour, fenugreek leaves (methi), spices, oil.</p>
+      <p><strong>Instructions:</strong> Mix dough with methi and spices, roll, cook on skillet until golden.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Apni Jain Recipe
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
