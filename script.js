@@ -14,8 +14,10 @@ function openRecipe(evt, recipeName) {
   evt.currentTarget.className += " active";
 }
 
-// Show first tab on page load
+// Show first tab on load
 document.addEventListener("DOMContentLoaded", function() {
   let firstTab = document.getElementsByClassName("tablink")[0];
-  if(firstTab) firstTab.click();
+  if(firstTab) {
+    firstTab.click();
+  }
 });
