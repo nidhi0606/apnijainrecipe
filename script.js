@@ -1,22 +1,28 @@
-// Show selected recipe
-function openRecipe(evt, recipeName) {
-  var i, tabcontent, tablinks;
+// script.js
 
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
+function openRecipe(evt, recipeName) {
+  // सभी रेसिपी कंटेंट को छुपाएँ
+  let tabcontent = document.getElementsByClassName("tabcontent");
+  for (let i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+  // सभी बटन से active क्लास हटाएँ
+  let tablinks = document.getElementsByClassName("tablink");
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
+  // चुनी हुई रेसिपी दिखाएँ और बटन को active बनाएँ
   document.getElementById(recipeName).style.display = "block";
-  evt.currentTarget.style.backgroundColor = "#ff4500";
+  evt.currentTarget.className += " active";
 }
 
-// Show first recipe by default
+// पेज लोड होते ही पहली रेसिपी दिखाएँ
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelector(".tablink").click();
+  // पहली टैब को एक्टिव करें (टोफू और अखरोट रोल)
+  let firstTab = document.getElementsByClassName("tablink")[0];
+  if (firstTab) {
+    firstTab.click();
+  }
 });
