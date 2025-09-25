@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apni Jain Recipe</title>
+  <title>अपनी जैन रेसिपी</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +11,19 @@
   <!-- Header with Logo -->
   <header>
     <div class="logo-container">
-      <img src="images/logo.png" alt="Apni Jain Recipe Logo" class="logo">
-      <h1>Apni Jain Recipe</h1>
-      <p>Healthy & Delicious Jain Recipes</p>
+      <img src="images/logo.png" alt="अपनी जैन रेसिपी लोगो" class="logo">
+      <h1>अपनी जैन रेसिपी</h1>
+      <p>स्वस्थ और स्वादिष्ट जैन रेसिपी</p>
     </div>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <button class="tablink" onclick="openRecipe(event, 'TofuWalnut')">Tofu & Walnut Rolls</button>
-    <button class="tablink" onclick="openRecipe(event, 'PumpkinCabbage')">Pumpkin Seed Cabbage Rolls</button>
-    <button class="tablink" onclick="openRecipe(event, 'HimachaliTofu')">Himachali Tofu Stuffed Shimla Mirch</button>
-    <button class="tablink" onclick="openRecipe(event, 'CabbageSweetCorn')">Cabbage Tofu Rolls with Sweet Corn & Walnut</button>
-    <button class="tablink" onclick="openRecipe(event, 'RajgiraMomo')">Rajgira Momo</button>
+    <button class="tablink" onclick="openRecipe(event, 'TofuWalnut')">टोफू और अखरोट रोल</button>
+    <button class="tablink" onclick="openRecipe(event, 'PumpkinCabbage')">कद्दू के बीज वाली गोभी रोल</button>
+    <button class="tablink" onclick="openRecipe(event, 'HimachaliTofu')">हिमाचली टोफू स्टफ्ड शिमला मिर्च</button>
+    <button class="tablink" onclick="openRecipe(event, 'CabbageSweetCorn')">गोभी टोफू रोल मीठा मकई और अखरोट के साथ</button>
+    <button class="tablink" onclick="openRecipe(event, 'RajgiraMomo')">राजगिरा मोमोज</button>
   </nav>
 
   <!-- Recipe Container -->
@@ -31,7 +31,120 @@
 
     <!-- Tofu & Walnut Rolls -->
     <div id="TofuWalnut" class="tabcontent">
-      <h2>Weight-Loss Style Tofu & Walnut Rolls</h2>
-      <img src="images/tofu_walnut_rolls.jpg" alt="Tofu & Walnut Rolls" class="recipe-img">
-      <h3>Ingredients:</h3>
-      <u
+      <h2>वजन घटाने के लिए टोफू और अखरोट रोल</h2>
+      <img src="images/tofu_walnut_rolls.jpg" alt="टोफू और अखरोट रोल" class="recipe-img">
+      <h3>सामग्री:</h3>
+      <ul>
+        <li>200 ग्राम टोफू, कद्दूकस किया हुआ</li>
+        <li>2 टेबलस्पून अखरोट, कटे हुए</li>
+        <li>1 टीस्पून जैतून का तेल</li>
+        <li>स्वाद अनुसार नमक और काली मिर्च</li>
+        <li>1 टीस्पून सोया सॉस (वैकल्पिक)</li>
+      </ul>
+      <h3>निर्देश:</h3>
+      <ol>
+        <li>टोफू और अखरोट को नमक, काली मिर्च और तेल के साथ मिलाएँ।</li>
+        <li>छोटे रोल या पैटी बनाएं।</li>
+        <li>नॉन-स्टिक पैन गर्म करें और प्रत्येक रोल को 3–4 मिनट प्रति तरफ सुनहरा होने तक पकाएँ।</li>
+        <li>गरम सलाद के साथ परोसें।</li>
+      </ol>
+    </div>
+
+    <!-- Pumpkin Seed Cabbage Rolls -->
+    <div id="PumpkinCabbage" class="tabcontent">
+      <h2>कद्दू के बीज वाली गोभी रोल</h2>
+      <img src="images/pumpkin_seed_cabbage_rolls.jpg" alt="कद्दू बीज वाली गोभी रोल" class="recipe-img">
+      <h3>सामग्री:</h3>
+      <ul>
+        <li>6 बड़ी गोभी की पत्तियाँ</li>
+        <li>1 कप पका हुआ क्विनोआ या चावल</li>
+        <li>2 टेबलस्पून कद्दू के बीज</li>
+        <li>1 गाजर, कद्दूकस किया हुआ</li>
+        <li>नमक, काली मिर्च और हर्ब्स</li>
+      </ul>
+      <h3>निर्देश:</h3>
+      <ol>
+        <li>गोभी की पत्तियों को नरम होने तक उबालें।</li>
+        <li>पके क्विनोआ, कद्दू के बीज, गाजर और मसाले मिलाएँ।</li>
+        <li>प्रत्येक पत्ती में मिश्रण भरें और रोल करें।</li>
+        <li>स्टीम करें या 10 मिनट के लिए बेक करें।</li>
+      </ol>
+    </div>
+
+    <!-- Himachali Tofu Stuffed Shimla Mirch -->
+    <div id="HimachaliTofu" class="tabcontent">
+      <h2>हिमाचली–उत्तराखंडी टोफू स्टफ्ड शिमला मिर्च</h2>
+      <img src="images/himachali_tofu.jpg" alt="हिमाचली टोफू स्टफ्ड शिमला मिर्च" class="recipe-img">
+      <h3>सामग्री:</h3>
+      <ul>
+        <li>4 शिमला मिर्च</li>
+        <li>150 ग्राम टोफू, कद्दूकस किया हुआ</li>
+        <li>1 प्याज, कटा हुआ</li>
+        <li>1 टीस्पून जीरा</li>
+        <li>नमक, काली मिर्च और गरम मसाला</li>
+      </ul>
+      <h3>निर्देश:</h3>
+      <ol>
+        <li>शिमला मिर्च के ऊपर का हिस्सा काटें और बीज निकालें।</li>
+        <li>प्याज, टोफू और मसाले भूनें।</li>
+        <li>शिमला मिर्च में मिश्रण भरें।</li>
+        <li>180°C पर 20 मिनट बेक करें।</li>
+      </ol>
+    </div>
+
+    <!-- Cabbage Tofu Rolls with Sweet Corn & Walnut -->
+    <div id="CabbageSweetCorn" class="tabcontent">
+      <h2>गोभी टोफू रोल मीठा मकई और अखरोट के साथ</h2>
+      <img src="images/cabbage_tofu_sweetcorn.jpg" alt="गोभी टोफू रोल" class="recipe-img">
+      <h3>सामग्री:</h3>
+      <ul>
+        <li>6 गोभी की पत्तियाँ</li>
+        <li>100 ग्राम टोफू, कद्दूकस किया हुआ</li>
+        <li>½ कप मीठा मकई</li>
+        <li>2 टेबलस्पून अखरोट, कटे हुए</li>
+        <li>नमक, काली मिर्च, हर्ब्स</li>
+      </ul>
+      <h3>निर्देश:</h3>
+      <ol>
+        <li>गोभी की पत्तियों को नरम होने तक उबालें।</li>
+        <li>टोफू, मकई, अखरोट और मसाले मिलाएँ।</li>
+        <li>पत्तियों में मिश्रण भरें और रोल करें।</li>
+        <li>10 मिनट के लिए स्टीम करें या बेक करें।</li>
+      </ol>
+    </div>
+
+    <!-- Rajgira Momo (Vrat/Sankranti) -->
+    <div id="RajgiraMomo" class="tabcontent">
+      <h2>राजगिरा मोमोज (व्रत/संक्रांति विशेष)</h2>
+      <img src="images/rajgira_momo.jpg" alt="राजगिरा मोमोज" class="recipe-img">
+      <h3>सामग्री:</h3>
+      <ul>
+        <li>1 कप राजगिरा (अमरंथ) का आटा</li>
+        <li>½ कप उबली और मैश की हुई आलू</li>
+        <li>1–2 हरी मिर्च, बारीक कटी हुई</li>
+        <li>1 टीस्पून अदरक, कद्दूकस किया हुआ</li>
+        <li>स्वाद अनुसार नमक और सेंधा नमक</li>
+        <li>आटा गूँथने के लिए पानी</li>
+        <li>1 टीस्पून घी (वैकल्पिक, ब्रश करने के लिए)</li>
+      </ul>
+      <h3>निर्देश:</h3>
+      <ol>
+        <li>राजगिरा आटा, नमक और पानी मिलाकर नरम आटा तैयार करें।</li>
+        <li>भरावन तैयार करें: मैश की हुई आलू, हरी मिर्च, अदरक और नमक मिलाएँ।</li>
+        <li>आटे की छोटी लोइयां बनाकर गोल करें, भरावन रखें और मोमो का आकार दें।</li>
+        <li>मोमोज़ को 10–12 मिनट स्टीम करें।</li>
+        <li>हल्का घी लगाएँ और गरम परोसें।</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 अपनी जैन रेसिपी | स्वस्थ जैन खाना</p>
+    <p>हमारा अनुसरण करें <a href="#" target="_blank">इंस्टाग्राम</a> | <a href="#" target="_blank">फेसबुक</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
